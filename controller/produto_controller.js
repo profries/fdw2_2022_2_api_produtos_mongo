@@ -1,5 +1,6 @@
 const Produto = require("../model/produto");
 
+
 exports.listar = (req, res) => {
     Produto.find({}, (err, produtos) => {
         if(err){
